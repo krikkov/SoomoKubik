@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@keyframes toast-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.97);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.toast-in {
+  animation: toast-in 3s ease forwards;
+}
+
+@keyframes flash-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flash-in {
+  animation: flash-in 0.2s ease-out;
+}
